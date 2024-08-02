@@ -1,1 +1,1 @@
-# sex-and-the-city-2.0
+# Sex and the city 2.0
