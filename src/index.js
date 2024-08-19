@@ -18,8 +18,12 @@ const spinnerFallback = (
 /**
  * PAGES
  */
+import Error from './pages/Error';
+import Main from './pages/Main';
 
-const router = createBrowserRouter([]);
+const router = createBrowserRouter([
+	{ path: '/', element: <Main />, errorElement: <Error /> },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.Suspense fallback={spinnerFallback}>
