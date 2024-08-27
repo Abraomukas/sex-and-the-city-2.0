@@ -39,19 +39,9 @@ function AboutUs() {
 							<div className='container'>
 								<h1 className='display-1 fw-bold'>
 									<Trans i18nKey={'about-us.header'}>
-										<strong></strong>
+										<strong>About me</strong>
 									</Trans>
 								</h1>
-
-								<br />
-
-								<h3>
-									<Trans i18nKey={'about-us.subheader'}>
-										<strong></strong>
-									</Trans>
-								</h3>
-
-								<br />
 
 								<p>
 									Quisque sollicitudin condimentum diam, quis egestas neque
