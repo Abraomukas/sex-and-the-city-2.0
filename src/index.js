@@ -21,10 +21,12 @@ const spinnerFallback = (
 import Error from './pages/Error';
 import Main from './pages/Main';
 import AboutMe from './pages/AboutMe';
+import Blog from './pages/Blog';
 
 const router = createBrowserRouter([
 	{ path: '/', element: <Main />, errorElement: <Error /> },
 	{ path: '/contact', element: <AboutMe />, errorElement: <Error /> },
+	{ path: '/blog', element: <Blog />, errorElement: <Error /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
