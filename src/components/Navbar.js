@@ -9,7 +9,10 @@ const languages = [
 	{ name: 'Italiano', country_code: 'it' },
 ];
 
-const sections = [];
+const sections = [
+	{ label: 'Blog', to: '/blog' },
+	{ label: 'Aoout Me', to: '/contact' },
+];
 
 function Navbar(props) {
 	const [isDarkMode, setIsDarkMode] = useState(false);
