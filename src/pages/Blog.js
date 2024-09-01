@@ -9,6 +9,8 @@ import Footer from '../components/Footer';
 export default function Blog() {
 	const currentLngCode = Cookies.get('i18next') || 'gb';
 
+	stories = [{ label: '', to: '/' }];
+
 	return (
 		<div style={{ position: 'relative', minHeight: '100vh' }}>
 			<Navbar />
