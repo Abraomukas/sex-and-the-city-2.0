@@ -10,7 +10,7 @@ const languages = [
 ];
 
 const sections = [
-	{ label: 'Blog', to: '/blog' },
+	{ label: 'Stories', to: '/blog' },
 	{ label: 'Aoout Me', to: '/contact' },
 ];
 
