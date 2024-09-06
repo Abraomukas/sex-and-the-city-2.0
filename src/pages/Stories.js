@@ -7,10 +7,16 @@ import { Trans, useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-export default function Blog() {
+export default function Stories() {
 	const currentLngCode = Cookies.get('i18next') || 'gb';
 
-	const stories = [{ label: '', to: '/' }];
+	const stories = [
+		{ label: 'LORE IPSUM', to: '/' },
+		{ label: 'LORE IPSUM', to: '/' },
+		{ label: 'LORE IPSUM', to: '/' },
+		{ label: 'LORE IPSUM', to: '/' },
+		{ label: 'LORE IPSUM', to: '/' },
+	];
 
 	return (
 		<div style={{ position: 'relative', minHeight: '100vh' }}>
@@ -29,7 +35,7 @@ export default function Blog() {
 					<div className='position-relative p-5 p-md-1 m-md-1 text-center'>
 						<div className='col-md-6 p-lg-5 mx-auto mt-3'>
 							<h1 className='display-3 fw-bold'>
-								<Trans i18nKey={'blog.header'} />
+								<Trans i18nKey={'stories.header'} />
 							</h1>
 						</div>
 					</div>
@@ -50,7 +56,7 @@ export default function Blog() {
 														key={index}
 														className='display-5 d-flex align-items-center justify-content-center'
 														style={{ minHeight: '115px' }}>
-														<Trans key={index} i18nKey={''} />
+														<Trans key={index} i18nKey={`${story.label}`} />
 													</h2>
 												</div>
 											</Link>
