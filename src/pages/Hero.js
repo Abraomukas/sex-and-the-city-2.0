@@ -14,8 +14,14 @@ export default function Hero() {
 	return (
 		<div
 			style={{
-				position: 'relative',
-				minHeight: '100vh',
-			}}></div>
+				display: 'flex',
+				justifyContent: 'center',
+				alignItems: 'center',
+				height: '100vh',
+			}}>
+			<h3>
+				<Trans i18nKey={'hero.header'} />
+			</h3>
+		</div>
 	);
 }
