@@ -11,7 +11,7 @@ const languages = [
 
 const sections = [
 	{ label: 'Stories', to: '/blog' },
-	{ label: 'Aoout Me', to: '/contact' },
+	{ label: 'About Me', to: '/contact' },
 ];
 
 function Navbar(props) {
