@@ -22,11 +22,29 @@ import Error from './pages/Error';
 import Main from './pages/Main';
 import AboutMe from './pages/AboutMe';
 import Stories from './pages/Stories';
+import Story from './pages/Story';
 
 const router = createBrowserRouter([
-	{ path: '/', element: <Main />, errorElement: <Error /> },
-	{ path: '/contact', element: <AboutMe />, errorElement: <Error /> },
-	{ path: '/blog', element: <Stories />, errorElement: <Error /> },
+	{
+		path: '/',
+		element: <Main />,
+		errorElement: <Error />,
+	},
+	{
+		path: '/contact',
+		element: <AboutMe />,
+		errorElement: <Error />,
+	},
+	{
+		path: '/blog',
+		element: <Stories />,
+		errorElement: <Error />,
+	},
+	{
+		path: '/blog/:story',
+		element: <Story />,
+		errorElement: <Error />,
+	},
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
